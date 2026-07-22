@@ -133,39 +133,39 @@ html.dark-mode header#header > nav.header-links > .links a:hover, html.dark-mode
   background-color: oklch(28.1% 0.017 266.38deg) !important;
 }
 
-header input#header-search-box-input {
+header input#header-search-box-input, form.search-box > input {
   border: 1px solid;
   border-color: oklch(84.5% 0.015 268.51deg) !important;
 }
-html.dark-mode header input#header-search-box-input {
+html.dark-mode header input#header-search-box-input, html.dark-mode form.search-box > input {
   border-color: oklch(37.9% 0.022 267.47deg) !important;
 }
-header input#header-search-box-input:focus {
+header input#header-search-box-input:focus, form.search-box > input:focus {
   border-color: oklch(68.9% 0.033 267.09deg) !important;
 }
-html.dark-mode header input#header-search-box-input:focus {
+html.dark-mode header input#header-search-box-input:focus, html.dark-mode form.search-box > input:focus {
   border-color: oklch(61.3% 0.035 265.99deg) !important;
 }
 
-header input#header-search-box-input, button#header-search-box-button {
+header input#header-search-box-input, button#header-search-box-button, form.search-box > input {
   color: oklch(36.1% 0.046 251.47deg) !important;
 }
-html.dark-mode header input#header-search-box-input, html.dark-mode button#header-search-box-button {
+html.dark-mode header input#header-search-box-input, html.dark-mode button#header-search-box-button, html.dark-mode form.search-box > input {
   color: oklch(95.8% 0.003 264.69deg) !important;
 }
-header input#header-search-box-input, button#header-search-box-button {
+header input#header-search-box-input, button#header-search-box-button, form.search-box > input {
   background-color: oklch(92.2% 0.007 268.62deg) !important;
 }
-html.dark-mode header input#header-search-box-input, html.dark-mode button#header-search-box-button {
+html.dark-mode header input#header-search-box-input, html.dark-mode button#header-search-box-button, html.dark-mode form.search-box > input {
   background-color: oklch(28.1% 0.017 266.38deg) !important;
 }
-header input#header-search-box-input, button#header-search-box-button {
+header input#header-search-box-input, button#header-search-box-button, form.search-box > input {
   border-radius: 12px !important;
 }
-header input#header-search-box-input::placeholder, button#header-search-box-button::placeholder {
+header input#header-search-box-input::placeholder, button#header-search-box-button::placeholder, form.search-box > input::placeholder {
   color: oklch(36.1% 0.046 251.47deg) !important;
 }
-html.dark-mode header input#header-search-box-input::placeholder, html.dark-mode button#header-search-box-button::placeholder {
+html.dark-mode header input#header-search-box-input::placeholder, html.dark-mode button#header-search-box-button::placeholder, html.dark-mode form.search-box > input::placeholder {
   color: oklch(95.8% 0.003 264.69deg) !important;
 }
 

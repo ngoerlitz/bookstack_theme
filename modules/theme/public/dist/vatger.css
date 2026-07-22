@@ -222,6 +222,15 @@ a.grid-card:hover {
 html.dark-mode a.grid-card:hover {
   border-color: oklch(53.5% 0.031 267.28deg) !important;
 }
+a.grid-card .bg-bookshelf {
+  background-color: oklch(36.1% 0.046 251.47deg) !important;
+}
+a.grid-card .featured-image-container {
+  opacity: 0.9;
+}
+a.grid-card:hover .featured-image-container {
+  opacity: 1 !important;
+}
 
 .card {
   background: #FFF !important;
@@ -388,6 +397,11 @@ table thead tr td {
 }
 html.dark-mode .text-secondary {
   color: red !important;
+}
+
+svg[fill=none],
+svg[fill=none] * {
+  fill: none !important;
 }
 
 /*# sourceMappingURL=vatger.css.map */

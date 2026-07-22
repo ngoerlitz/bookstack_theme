@@ -10,6 +10,18 @@ a.grid-card {
     @include mixins.themed(box-shadow, vars.$vatger-card-shadow);
     @include mixins.lightDark(border-color, vars.$color-secondary-200, vars.$color-secondary-600);
   }
+
+  .bg-bookshelf {
+    background-color: vars.$color-primary-900 !important;
+  }
+
+  .featured-image-container {
+    opacity: 0.9;
+  }
+
+  &:hover .featured-image-container {
+    opacity: 1 !important;
+  }
 }
 
 .card {

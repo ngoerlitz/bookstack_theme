@@ -21,3 +21,18 @@ a.entity-list-item {
     @include mixins.lightDark(background-color, vars.$color-secondary-50, vars.$color-secondary-800);
   }
 }
+
+a#login-button {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+
+  .svg-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}

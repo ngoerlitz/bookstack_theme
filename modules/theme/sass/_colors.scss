@@ -1,0 +1,7 @@
+@use "vars";
+@use "derived";
+@use "mixins";
+
+.text-secondary {
+  @include mixins.lightDark(color, vars.$color-secondary-500, red);
+}

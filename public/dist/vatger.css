@@ -1,0 +1,373 @@
+* {
+  font-family: "Vatger", system-ui, serif !important;
+}
+
+@font-face {
+  font-family: "Vatger";
+  src: url("/theme/vatger/fonts/Vatger-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vatger";
+  src: url("fonts/Vatger-ExtraLightItalic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Vatger";
+  src: url("/theme/vatger/fonts/Vatger-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vatger";
+  src: url("/theme/vatger/fonts/Vatger-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Vatger";
+  src: url("/theme/vatger/fonts/Vatger-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vatger";
+  src: url("/theme/vatger/fonts/Vatger-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Vatger";
+  src: url("/theme/vatger/fonts/Vatger-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vatger";
+  src: url("/theme/vatger/fonts/Vatger-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Vatger";
+  src: url("/theme/vatger/fonts/Vatger-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vatger";
+  src: url("/theme/vatger/fonts/Vatger-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Vatger";
+  src: url("/theme/vatger/fonts/Vatger-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vatger";
+  src: url("/theme/vatger/fonts/Vatger-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Vatger";
+  src: url("/theme/vatger/fonts/Vatger-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vatger";
+  src: url("/theme/vatger/fonts/Vatger-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+div#content, footer {
+  background: oklch(95.8% 0.003 264.69deg) !important;
+}
+html.dark-mode div#content, html.dark-mode footer {
+  background: oklch(21.7% 0.011 260.68deg) !important;
+}
+
+footer {
+  border-top: 1px solid !important;
+  border-top-color: oklch(92.2% 0.007 268.62deg) !important;
+}
+html.dark-mode footer {
+  border-top-color: oklch(28.1% 0.017 266.38deg) !important;
+}
+
+header#header {
+  background-color: oklch(95.8% 0.003 264.69deg) !important;
+}
+html.dark-mode header#header {
+  background-color: oklch(21.7% 0.011 260.68deg) !important;
+}
+header#header {
+  border-bottom: 1px solid !important;
+  border-bottom-color: oklch(92.2% 0.007 268.62deg) !important;
+}
+html.dark-mode header#header {
+  border-bottom-color: oklch(28.1% 0.017 266.38deg) !important;
+}
+header#header {
+  box-shadow: none !important;
+}
+header#header > nav.header-links > .links a, header#header > nav.header-links > .dropdown-container button.user-name {
+  color: oklch(36.1% 0.046 251.47deg) !important;
+}
+html.dark-mode header#header > nav.header-links > .links a, html.dark-mode header#header > nav.header-links > .dropdown-container button.user-name {
+  color: oklch(95.8% 0.003 264.69deg) !important;
+}
+header#header > nav.header-links > .links a, header#header > nav.header-links > .dropdown-container button.user-name {
+  border-radius: 12px !important;
+}
+header#header > nav.header-links > .links a:hover, header#header > nav.header-links > .dropdown-container button.user-name:hover {
+  background-color: oklch(92.2% 0.007 268.62deg) !important;
+}
+html.dark-mode header#header > nav.header-links > .links a:hover, html.dark-mode header#header > nav.header-links > .dropdown-container button.user-name:hover {
+  background-color: oklch(28.1% 0.017 266.38deg) !important;
+}
+
+header input#header-search-box-input {
+  border: 1px solid;
+  border-color: oklch(84.5% 0.015 268.51deg) !important;
+}
+html.dark-mode header input#header-search-box-input {
+  border-color: oklch(37.9% 0.022 267.47deg) !important;
+}
+header input#header-search-box-input:focus {
+  border-color: oklch(68.9% 0.033 267.09deg) !important;
+}
+html.dark-mode header input#header-search-box-input:focus {
+  border-color: oklch(61.3% 0.035 265.99deg) !important;
+}
+
+header input#header-search-box-input, button#header-search-box-button {
+  color: oklch(36.1% 0.046 251.47deg) !important;
+}
+html.dark-mode header input#header-search-box-input, html.dark-mode button#header-search-box-button {
+  color: oklch(95.8% 0.003 264.69deg) !important;
+}
+header input#header-search-box-input, button#header-search-box-button {
+  background-color: oklch(92.2% 0.007 268.62deg) !important;
+}
+html.dark-mode header input#header-search-box-input, html.dark-mode button#header-search-box-button {
+  background-color: oklch(28.1% 0.017 266.38deg) !important;
+}
+header input#header-search-box-input, button#header-search-box-button {
+  border-radius: 12px !important;
+}
+header input#header-search-box-input::placeholder, button#header-search-box-button::placeholder {
+  color: oklch(36.1% 0.046 251.47deg) !important;
+}
+html.dark-mode header input#header-search-box-input::placeholder, html.dark-mode button#header-search-box-button::placeholder {
+  color: oklch(95.8% 0.003 264.69deg) !important;
+}
+
+.button,
+input,
+select,
+nav.active-link-list a,
+.icon-list a,
+button.icon-list-item,
+div.dropdown-search-toggle-select {
+  border-radius: 12px !important;
+}
+
+a.entity-list-item:not(:where(.sidebar-page-list, .entity-list.compact, .global-search-suggestions) *) {
+  border-radius: 12px !important;
+}
+
+a.entity-list-item:hover {
+  background-color: oklch(95.8% 0.003 264.69deg) !important;
+}
+html.dark-mode a.entity-list-item:hover {
+  background-color: oklch(37.9% 0.022 267.47deg) !important;
+}
+
+a.grid-card {
+  border-radius: 16px !important;
+  border-color: oklch(84.5% 0.015 268.51deg) !important;
+}
+html.dark-mode a.grid-card {
+  border-color: oklch(37.9% 0.022 267.47deg) !important;
+}
+a.grid-card:hover {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+html.dark-mode a.grid-card:hover {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.1) !important;
+}
+a.grid-card:hover {
+  border-color: oklch(84.5% 0.015 268.51deg) !important;
+}
+html.dark-mode a.grid-card:hover {
+  border-color: oklch(53.5% 0.031 267.28deg) !important;
+}
+
+.card {
+  background: #FFF !important;
+}
+html.dark-mode .card {
+  background: oklch(28.1% 0.017 266.38deg) !important;
+}
+.card {
+  border-radius: 16px !important;
+  overflow: clip !important;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+html.dark-mode .card {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dropdown-menu {
+  background: #FFF !important;
+}
+html.dark-mode .dropdown-menu {
+  background: oklch(28.1% 0.017 266.38deg) !important;
+}
+.dropdown-menu {
+  border: 1px solid;
+  border-color: oklch(84.5% 0.015 268.51deg) !important;
+}
+html.dark-mode .dropdown-menu {
+  border-color: oklch(37.9% 0.022 267.47deg) !important;
+}
+.dropdown-menu {
+  border-radius: 12px !important;
+  overflow: clip !important;
+}
+.dropdown-menu a.icon-item:hover, .dropdown-menu a.text-item:hover, .dropdown-menu button.icon-item:hover {
+  background: oklch(92.2% 0.007 268.62deg) !important;
+}
+html.dark-mode .dropdown-menu a.icon-item:hover, html.dark-mode .dropdown-menu a.text-item:hover, html.dark-mode .dropdown-menu button.icon-item:hover {
+  background: oklch(37.9% 0.022 267.47deg) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: oklch(36.1% 0.046 251.47deg);
+}
+html.dark-mode h1, html.dark-mode h2, html.dark-mode h3, html.dark-mode h4, html.dark-mode h5, html.dark-mode h6 {
+  color: oklch(95.8% 0.003 264.69deg);
+}
+
+h2, h3 {
+  font-weight: 600 !important;
+}
+
+h4, h5 {
+  font-weight: 500 !important;
+}
+
+h1 {
+  font-weight: 700 !important;
+  color: oklch(36.1% 0.046 251.47deg) !important;
+}
+html.dark-mode h1 {
+  color: oklch(95.8% 0.003 264.69deg) !important;
+}
+
+h1.medium-title {
+  font-size: 2.8rem !important;
+}
+
+.page-content, .card-title {
+  color: oklch(36.1% 0.046 251.47deg);
+}
+html.dark-mode .page-content, html.dark-mode .card-title {
+  color: oklch(95.8% 0.003 264.69deg);
+}
+
+ul.sidebar-page-nav li.page-nav-item > a {
+  color: oklch(36.1% 0.046 251.47deg) !important;
+}
+html.dark-mode ul.sidebar-page-nav li.page-nav-item > a {
+  color: oklch(95.8% 0.003 264.69deg) !important;
+}
+ul.sidebar-page-nav li.page-nav-item.current-heading > div.link-background.sidebar-page-nav-bullet {
+  background-color: oklch(36.1% 0.046 251.47deg) !important;
+}
+html.dark-mode ul.sidebar-page-nav li.page-nav-item.current-heading > div.link-background.sidebar-page-nav-bullet {
+  background-color: oklch(95.8% 0.003 264.69deg) !important;
+}
+ul.sidebar-page-nav li.page-nav-item > div.link-background.sidebar-page-nav-bullet {
+  box-shadow: none !important;
+}
+
+blockquote {
+  background-color: oklch(95.8% 0.003 264.69deg) !important;
+}
+html.dark-mode blockquote {
+  background-color: oklch(21.7% 0.011 260.68deg) !important;
+}
+blockquote {
+  border-width: 0 !important;
+  border-radius: 12px !important;
+  overflow: clip;
+}
+
+.callout {
+  border-width: 0 !important;
+  border-radius: 12px !important;
+  overflow: clip;
+}
+
+table {
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table td {
+  border: 0;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: oklch(92.2% 0.007 268.62deg) !important;
+}
+html.dark-mode table td {
+  border-color: oklch(37.9% 0.022 267.47deg) !important;
+}
+
+/* Outer edges */
+table tr td:first-child {
+  border-left: 1px solid;
+}
+
+table thead tr:first-child td {
+  border-top: 1px solid;
+}
+
+/* Rounded corner cells */
+table thead tr:first-child td:first-child {
+  border-top-left-radius: 16px;
+}
+
+table thead tr:first-child td:last-child {
+  border-top-right-radius: 16px;
+}
+
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 16px;
+}
+
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 16px;
+}
+
+table thead tr td {
+  background-color: oklch(92.2% 0.007 268.62deg) !important;
+}
+html.dark-mode table thead tr td {
+  background-color: oklch(37.9% 0.022 267.47deg) !important;
+}
+table thead tr td {
+  padding-block: 0.7rem;
+}
+
+/*# sourceMappingURL=vatger.css.map */

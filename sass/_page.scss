@@ -1,0 +1,12 @@
+@use "derived";
+@use "mixins";
+@use "vars";
+
+div#content, footer {
+  @include mixins.themed(background, derived.$vatger-page-background);
+}
+
+footer {
+  border-top: 1px solid !important;
+  @include mixins.lightDark(border-top-color, vars.$color-secondary-100, vars.$color-secondary-900);
+}

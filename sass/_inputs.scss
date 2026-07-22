@@ -1,0 +1,23 @@
+@use "vars";
+@use "mixins";
+
+.button,
+input,
+select,
+nav.active-link-list a,
+.icon-list a,
+button.icon-list-item,
+div.dropdown-search-toggle-select
+{
+  border-radius: vars.$vatger-button-border-radius !important;
+}
+
+a.entity-list-item:not(:where(.sidebar-page-list, .entity-list.compact, .global-search-suggestions) *) {
+  border-radius: vars.$vatger-button-border-radius !important;
+}
+
+a.entity-list-item {
+  &:hover {
+    @include mixins.lightDark(background-color, vars.$color-secondary-50, vars.$color-secondary-800);
+  }
+}

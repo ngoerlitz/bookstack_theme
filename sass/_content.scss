@@ -1,0 +1,101 @@
+@use "vars";
+@use "derived";
+@use "mixins";
+
+a.grid-card {
+  border-radius: vars.$vatger-card-border-radius !important;
+  @include mixins.lightDark(border-color, vars.$color-secondary-200, vars.$color-secondary-800);
+
+  &:hover {
+    @include mixins.themed(box-shadow, vars.$vatger-card-shadow);
+    @include mixins.lightDark(border-color, vars.$color-secondary-200, vars.$color-secondary-600);
+  }
+}
+
+.card {
+  @include mixins.lightDark(background, #FFF, vars.$color-secondary-900);
+  border-radius: vars.$vatger-card-border-radius !important;
+  overflow: clip !important;
+
+  @include mixins.themed(
+          box-shadow,
+          vars.$vatger-card-shadow,
+  );
+}
+
+.dropdown-menu {
+  @include mixins.lightDark(background, #FFF, vars.$color-secondary-900);
+
+  border: 1px solid;
+  @include mixins.lightDark(border-color, vars.$color-secondary-200, vars.$color-secondary-800);
+
+  border-radius: vars.$vatger-button-border-radius !important;
+  overflow: clip !important;
+
+  a.icon-item, a.text-item, button.icon-item {
+    &:hover {
+      @include mixins.lightDark(background, vars.$color-secondary-100, vars.$color-secondary-800);
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include mixins.themed(color, derived.$vatger-primary, false);
+}
+
+h2, h3 {
+  font-weight: 600 !important;
+}
+
+h4, h5 {
+  font-weight: 500 !important;
+}
+
+
+h1 {
+  font-weight: 700 !important;
+  @include mixins.themed(color, derived.$vatger-primary);
+}
+
+h1.medium-title {
+  font-size: 2.8rem !important;
+}
+
+.page-content, .card-title {
+  @include mixins.themed(color, derived.$vatger-primary, false);
+}
+
+ul.sidebar-page-nav li.page-nav-item {
+  >a {
+    @include mixins.themed(color, derived.$vatger-primary);
+
+  }
+
+  &.current-heading {
+    >div.link-background.sidebar-page-nav-bullet {
+      @include mixins.themed(background-color, derived.$vatger-primary);
+    }
+  }
+
+  >div.link-background.sidebar-page-nav-bullet {
+    box-shadow: none !important;
+  }
+}
+
+$content-border-radius: vars.$vatger-button-border-radius;
+
+blockquote {
+  @include mixins.themed(background-color, derived.$vatger-blockquote-background);
+
+  border-width: 0 !important;
+
+  border-radius: $content-border-radius !important;
+  overflow: clip;
+}
+
+.callout {
+  border-width: 0 !important;
+
+  border-radius: $content-border-radius !important;
+  overflow: clip;
+}

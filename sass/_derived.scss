@@ -1,0 +1,35 @@
+@use "vars";
+
+$vatger-primary: (
+        light: vars.$color-primary-900, dark: vars.$color-secondary-50
+);
+
+$vatger-accent: (
+        light: vars.$color-accent-500, dark: vars.$color-accent-500
+);
+
+$vatger-secondary: (
+        light: vars.$color-secondary-900, dark: vars.$color-secondary-900
+);
+
+$vatger-success: (
+        light: vars.$color-success-700, dark: vars.$color-success-700
+);
+
+$vatger-warning: (
+        light: vars.$color-warning-700, dark: vars.$color-warning-700
+);
+
+$vatger-danger: (
+        light: vars.$color-danger-700, dark: vars.$color-danger-700
+);
+
+
+
+$vatger-page-background: (
+   light: vars.$color-secondary-50, dark: vars.$color-secondary-950
+);
+
+$vatger-blockquote-background: (
+   light: vars.$color-secondary-50, dark: vars.$color-secondary-950
+);

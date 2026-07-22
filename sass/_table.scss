@@ -1,0 +1,57 @@
+@use "vars";
+@use "mixins";
+
+table {
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border-radius: vars.$vatger-button-border-radius;
+  overflow: hidden;
+}
+
+table td {
+  border: 0;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+
+  @include mixins.lightDark(
+          border-color,
+          vars.$color-secondary-100,
+          vars.$color-secondary-800
+  );
+}
+
+/* Outer edges */
+table tr td:first-child {
+  border-left: 1px solid;
+}
+
+table thead tr:first-child td {
+  border-top: 1px solid;
+}
+
+/* Rounded corner cells */
+table thead tr:first-child td:first-child {
+  border-top-left-radius: vars.$vatger-card-border-radius;
+}
+
+table thead tr:first-child td:last-child {
+  border-top-right-radius: vars.$vatger-card-border-radius;
+}
+
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: vars.$vatger-card-border-radius;
+}
+
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: vars.$vatger-card-border-radius;
+}
+
+table thead tr td {
+  @include mixins.lightDark(
+          background-color,
+          vars.$color-secondary-100,
+          vars.$color-secondary-800
+  );
+
+  padding-block: 0.7rem;
+}

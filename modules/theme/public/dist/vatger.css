@@ -222,7 +222,7 @@ a.grid-card:hover {
 html.dark-mode a.grid-card:hover {
   border-color: oklch(53.5% 0.031 267.28deg) !important;
 }
-a.grid-card .bg-bookshelf {
+a.grid-card .bg-bookshelf, a.grid-card .bg-book {
   background-color: oklch(36.1% 0.046 251.47deg) !important;
 }
 a.grid-card .featured-image-container {

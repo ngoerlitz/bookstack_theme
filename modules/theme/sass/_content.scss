@@ -11,7 +11,7 @@ a.grid-card {
     @include mixins.lightDark(border-color, vars.$color-secondary-200, vars.$color-secondary-600);
   }
 
-  .bg-bookshelf {
+  .bg-bookshelf, .bg-book {
     background-color: vars.$color-primary-900 !important;
   }
 

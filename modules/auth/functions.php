@@ -5,8 +5,7 @@ use BookStack\Theming\ThemeEvents;
 use BookStack\Theming\ThemeViews;
 use Illuminate\Support\Facades\Route;
 use Vatger\Auth\Controller\WelcomeController;
-use Vatger\Auth\Provider\VatsimAuthProvider;
-use Vatger\Auth\Provider\IAuthProvider;
+use Vatger\Auth\Controllers\AuthController;
 
 require_once __DIR__ . '/src/loader.php';
 
@@ -24,21 +23,17 @@ Theme::listen(ThemeEvents::APP_BOOT, function () {
 function registerRoutes(): void
 {
     Route::prefix('/vatger')->middleware(['web'])->group(function () {
-        Route::prefix('/oauth')
-            ->group(function () {
-                /** @var class-string<IAuthProvider> $provider */
-                $provider = VatsimAuthProvider::class;
-
+        Route::prefix('/oauth')->group(function () {
                 Route::get("/login", [
-                    $provider,
-                    'handleLogin'
+                    AuthController::class,
+                    'login'
                 ]);
 
                 Route::get("/callback", [
-                    $provider,
-                    'handleCallback'
+                    AuthController::class,
+                    'callback'
                 ]);
-            });
+        });
 
         Route::middleware(['auth'])->group(function () {
             Route::post("/welcome", [WelcomeController::class, 'handleWelcome']);

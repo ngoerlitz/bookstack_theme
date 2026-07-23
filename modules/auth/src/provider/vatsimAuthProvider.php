@@ -50,7 +50,7 @@ class VatsimAuthProvider implements IAuthProvider
     }
 
     #[NoReturn]
-    public function handleLogin(): RedirectResponse
+    public function login(): RedirectResponse
     {
         if (auth()->check()) {
             return redirect()->back()->with('error', 'Already logged in!');
@@ -74,7 +74,7 @@ class VatsimAuthProvider implements IAuthProvider
     }
 
     #[NoReturn]
-    public function handleCallback(Request $request): RedirectResponse
+    public function callback(Request $request): RedirectResponse
     {
         if (auth()->check()) {
             return redirect()->back()->with('error', 'Already logged in!');

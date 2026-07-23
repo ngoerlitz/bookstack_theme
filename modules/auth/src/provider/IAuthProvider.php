@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 
 interface IAuthProvider
 {
-    public function handleLogin(): RedirectResponse;
-    public function handleCallback(Request $request): RedirectResponse;
+    public function login(): RedirectResponse;
+    public function callback(Request $request): RedirectResponse;
 }

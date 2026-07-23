@@ -1,0 +1,1 @@
+<script src="{{url('/theme/vatger/dist/vatger.js')}}" type="module" nonce="{{ $cspNonce }}"></script>

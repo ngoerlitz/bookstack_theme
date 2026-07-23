@@ -118,6 +118,7 @@ header#header {
   box-shadow: none !important;
 }
 header#header > nav.header-links > .links a, header#header > nav.header-links > .dropdown-container button.user-name {
+  font-weight: 600;
   color: oklch(36.1% 0.046 251.47deg) !important;
 }
 html.dark-mode header#header > nav.header-links > .links a, html.dark-mode header#header > nav.header-links > .dropdown-container button.user-name {
@@ -226,7 +227,7 @@ a.grid-card .bg-bookshelf, a.grid-card .bg-book {
   background-color: oklch(36.1% 0.046 251.47deg) !important;
 }
 a.grid-card .featured-image-container {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 a.grid-card:hover .featured-image-container {
   opacity: 1 !important;
@@ -276,6 +277,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 html.dark-mode h1, html.dark-mode h2, html.dark-mode h3, html.dark-mode h4, html.dark-mode h5, html.dark-mode h6 {
   color: oklch(95.8% 0.003 264.69deg);
+}
+
+.page-content, p:not(.vg-nocolor) {
+  color: oklch(36.1% 0.046 251.47deg);
+}
+html.dark-mode .page-content, html.dark-mode p:not(.vg-nocolor) {
+  color: oklch(84.5% 0.015 268.51deg);
+}
+.page-content, p:not(.vg-nocolor) {
+  line-height: 1.5rem;
 }
 
 h2, h3 {

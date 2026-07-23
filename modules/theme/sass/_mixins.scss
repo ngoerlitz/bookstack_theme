@@ -36,11 +36,19 @@
 }
 
 // Define a property for both light and dark mode
-@mixin lightDark($prop, $light, $dark) {
-  #{$prop}: $light !important;
+@mixin lightDark($prop, $light, $dark, $important: true) {
+  @if $important {
+    #{$prop}: $light !important;
 
-  html.dark-mode & {
-     #{$prop}: $dark !important;
+    html.dark-mode & {
+      #{$prop}: $dark !important;
+    }
+  } @else {
+    #{$prop}: $light;
+
+    html.dark-mode & {
+      #{$prop}: $dark;
+    }
   }
 }
 

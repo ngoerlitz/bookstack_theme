@@ -16,7 +16,7 @@ a.grid-card {
   }
 
   .featured-image-container {
-    opacity: 0.9;
+    opacity: 0.8;
   }
 
   &:hover .featured-image-container {
@@ -53,6 +53,11 @@ a.grid-card {
 
 h1, h2, h3, h4, h5, h6 {
   @include mixins.themed(color, derived.$vatger-primary, false);
+}
+
+.page-content, p:not(.vg-nocolor) {
+  @include mixins.lightDark(color, vars.$color-primary-900, vars.$color-secondary-200, false);
+  line-height: 1.5rem;
 }
 
 h2, h3 {

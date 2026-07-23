@@ -12,6 +12,7 @@ header#header {
 
   >nav.header-links {
     >.links a, >.dropdown-container button.user-name {
+      font-weight: 600;
 
       @include mixins.themed(color, derived.$vatger-primary);
       border-radius: vars.$vatger-button-border-radius !important;

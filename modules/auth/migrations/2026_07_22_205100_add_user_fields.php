@@ -11,8 +11,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('access_token');
-            $table->string('refresh_token');
+            $table->boolean('read_welcome')->default(false);
         });
     }
 
@@ -22,8 +21,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('access_token');
-            $table->dropColumn('refresh_token');
+            $table->dropColumn('read_welcome');
         });
     }
 };

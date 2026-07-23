@@ -11,8 +11,7 @@ class User extends BaseUser
         parent::__construct($attributes);
 
         $this->makeHidden([
-            'access_token',
-            'refresh_token',
+            'read_welcome'
         ]);
     }
 }
